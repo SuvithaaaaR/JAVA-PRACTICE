@@ -9,11 +9,19 @@ public class zero{
         for (int i =0 ; i < n ; i++){
             arr[i] = scanner.nextInt();
         }
-        System.out.print("Array elements are: " );
+        int count = 0;
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+            if(arr[i] != 0){
+                arr[count++]=arr[i];
+            }
         }
-        
-
+        for (int i = count; i < n; i++) {
+            arr[count ++]=0;
+        }
+    
+    System.out.print("The array after moving all zeros to the end is: ");
+    for (int i = 0; i < n; i++) {
+        System.out.print(arr[i] + " ");
     }
+}
 }
