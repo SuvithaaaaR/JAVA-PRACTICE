@@ -9,11 +9,11 @@ public class threestringfirstletter {
         System.out.print("First String"+" " + str1);
         char ch = string.next().charAt(0);
         if (str1.charAt(0) == ch || str2.charAt(0) == ch || str3.charAt(0) == ch) {
-            System.out.print("matched");
+            System.out.print("Yes");
 
         }
         else{
-            System.out.print("not matched");
+            System.out.print("not Yes");
         }
             
     }
